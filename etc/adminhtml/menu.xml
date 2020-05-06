@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend/etc/menu.xsd">
+    <menu>
+        <add
+            id="TechNimbus_MainMenu::main"
+            title="Tech Nimbus"
+            translate="title"
+            module="TechNimbus_MainMenu"
+            sortOrder="77"
+            resource="TechNimbus_MainMenu::main" />
+        <add
+            id="TechNimbus_MainMenu::settings"
+            title="Settings"
+            translate="title"
+            module="TechNimbus_MainMenu"
+            sortOrder="99"
+            resource="TechNimbus_MainMenu::settings"
+            parent="TechNimbus_MainMenu::main"
+            action="adminhtml/system_config/edit/section/technimbus"
+            />
+    </menu>
+</config>
